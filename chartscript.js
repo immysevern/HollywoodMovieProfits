@@ -10,7 +10,7 @@ Papa.parse('HollywoodsMostProfitableStories.csv', {
  
     results.data.forEach(row => {
       labels.push(row.Film);
-      values.push(cleanNumber(row.LeadStudio));
+      values.push(cleanNumber(row.RottenTomatoes));
     });
  
     new Chart(
@@ -20,7 +20,7 @@ Papa.parse('HollywoodsMostProfitableStories.csv', {
         data: {
           labels: labels,
           datasets: [{
-            label: 'LeadStudio',
+            label: 'RottenTomatoes',
             data: values,
             backgroundColor: '#4e79a7'
           }]
@@ -31,7 +31,7 @@ Papa.parse('HollywoodsMostProfitableStories.csv', {
               type: 'linear',
               title: {
                 display: true,
-                text: 'LeadStudio'
+                text: 'RottenTomatoes'
               }
             }
           }
