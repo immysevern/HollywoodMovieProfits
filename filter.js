@@ -1,7 +1,7 @@
 let allData = [];
 let chart = null;
 
-Papa.parse('HollywoodsMostprofitableStories.csv', {
+Papa.parse('HollywoodsMostProfitableStories.csv', {
     download: true, 
     header: true,
     skipEmptyLines: true,
